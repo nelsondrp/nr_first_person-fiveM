@@ -48,7 +48,7 @@ end)
 Citizen.CreateThread(function()
     createAndActivateCamera()
 
-    print("working-")
+    print("-- Custom FPS cam initialized --")
     while true do
         Citizen.Wait(1)
         if (IsPedOnFoot(playerPed)) and not combatMode then
