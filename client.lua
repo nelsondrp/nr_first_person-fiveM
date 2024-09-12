@@ -119,11 +119,6 @@ function blockDefaultFP()
     end
 end
 
--- Desativa a camera do script quando o jogador entra em veiculos ou combat mode (tecla v)
 function renderScriptCam(active)
-    if(active) then
-        RenderScriptCams(true, false, 0, false, false)
-    else
-        RenderScriptCams(false, false, 0, false, false)
-    end
+    RenderScriptCams(active, false, 0, false, false)
 end
